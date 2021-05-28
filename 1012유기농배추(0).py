@@ -20,12 +20,12 @@ for i in range(t):
 dx = [-1,1,0,0] #x축
 dy = [0,0,1,-2] #y축
 
-
+#cnt를 어디에 0으로 선언해야할지 모르겠다.
 
 def couting(x,y,cnt):
     for k in range(m):
         for l in range(n):
             
 
-
+#
 
