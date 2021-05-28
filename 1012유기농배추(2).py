@@ -2,32 +2,36 @@
 
 
 #bfs함수만들기
-def bfs(d,e):#배추가 심어져 있는 밭의 위치값(d,e)를 파라미터로 받았다
-    queue = [[d,e]] #queue라는 이차원배열을 만들어준다(list)
+#1012유기농배추 : 솔루션 코드 공부 후 다시 코드짜보기 
+
+def bfs(x,y):#배추가 심어져 있는 밭의 위치값(d,e)를 파라미터로 받았다
+    queue = [[x,y]] #queue라는 이차원배열을 만들어준다(list)
     #조사에 사용할 변수를 만들어준다. -> a,b라고 하자
-    while queue:#모든 queue리스트 요소에 대해 조사한다
+    while queue:
+        #모든 queue리스트 요소에 대해 조사한다
+        #그리고 이 업데이트 된 queue에 대해 또 다시 조사 -> while(queue)
+        #이제 조사를 해야한다-> 상하좌우로 움직일 수 있는지?
         a = queue[0][0]
         b = queue[0][1]
         del queue[0]
     #queue에는 연결가능한 배추가 심어져 있는 밭에 대한 데이터저장할 것 -> 비워준다(del)
     #a,b에 저장을 해줬다.
     #상하좌우로 움직여보자 -> 연결되는 배추가 심어져있는 밭이 있는지 조사하기위해서
-        for f in range(4):#4인 이유 = 상 하 좌 우 -> 총 4가지 방향이라서다
+        for i in range(4):#4인 이유 = 상 하 좌 우 -> 총 4가지 방향이라서다
             dx = [0,0,-1,1] #x에 대해 상하좌우
             dy = [1,-1,0,0] #y에 대해 상하좌우
-            d = a+dx[f]
-            e = b+dy[f]
+            q = a+dx[i]
+            w = b+dy[i]
         #그 밭에 배추가 심어져있는지(조건1) && 이동할 수 있는지(이미 가장자리였으면 불가능)(조건2)
         #위의 두 조건에 대해서 탐색한다. 
-            if matrix[d][e]==1 and 0<=d<n and 0<=e<m:
-                queue.append([d,e])
+            if matrix[q][w]==1 and 0<=q<n and 0<=w<m:
+                queue.append([q,w])
+                matrix[q][w]=0
                 #이미 조사한 밭을 또 다시 조사하면 안된다.
                 #조사대상이 matrix에서 해당 값이 1인 요소이므로 0으로 바꿔준다
-                
                 #a->b->a ; 이런 식으로 다시 돌아와서 조사하는 경우를 카운드하지 않기 위해서
 
-            #그리고 이 업데이트 된 queue에 대해 또 다시 조사 -> while(queue)
-    #이제 조사를 해야한다-> 상하좌우로 움직일 수 있는지?
+    
 
 
 t = int(input())
@@ -38,8 +42,8 @@ for i in range(t):
     cnt=0
     #케이스가 초기화되는 시점이라 cnt도 초기화(0)하여 정의
     for j in range(k):
-        x,y = map(int,input().split())
-        matrix[n][m]=1 
+        a,b = map(int,input().split())
+        matrix[a][m]=1 
         #배추가 심어져 있는 밭이라는 뜻(1)
         #[m][n]이 아닌 것에 주의하기
     #배추를 다 심어줬다
