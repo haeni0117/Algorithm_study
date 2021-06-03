@@ -1,13 +1,12 @@
-def factorial(n):
-    num = 1
-    for i in range(1, n+1):
-        num *= i
-    return num
-
-
-a = int(input())
-
-for _ in range(a):
-    n, m = map(int, input().split())
-    l = factorial(m) // (factorial(n) * factorial(m - n))
-    print(l)
+#팩토리얼 함수(재귀함수 사용)
+num = int(input())
+def factorial2(n):
+    if n==1:
+         return 1
+    else: 
+        return n*(factorial2(n-1))
+    
+for i in range(num):
+    a,b = map(int, input().split())
+    c=factorial2(a)//(factorial2(b)*factorial2(b-a))
+    print(c)
