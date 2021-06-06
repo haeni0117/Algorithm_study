@@ -32,3 +32,15 @@ for i in range(n):
 so.sort(key=lambda x : (x[0],x[1]))
 for i in so:
     print(i[0],i[1])
+
+#정답코드
+import sys 
+n = int(sys.stdin.readline())
+a=[]
+for i in range(n):
+    x,y=map(int,sys.stdin.readline().split())
+    a.append([x,y])
+a.sort()
+
+for i in range(len(a)):
+    print(a[i][0],a[i][1],sep=" ")
