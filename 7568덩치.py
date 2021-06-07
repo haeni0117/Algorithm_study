@@ -26,9 +26,7 @@ for i in range(len(xlist)):
         xlist[i].append(int(cnt))
 xlist.sort(key=lambda x : (x[2]))
 for i in range(len(xlist)):
-    if()
-            print(i-1,end=" ")
-        else:
-            print(i,end=" ")
+   # if
 
 
+ 
