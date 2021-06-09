@@ -1,9 +1,9 @@
 ## BOJ algorithm study 백준문제풀이
-날짜 | 문제 | 
----|:---:|
-20210519 | `#11047동전0(greedy)` `#1931회의실배정(greedy)`
-20210522 | `#1541잃어버린괄호(greedy)` `#13305주유소(greedy)` 
-
+날짜 | 문제 | 알고리즘
+---|:---:|:---:
+20210519 | `#11047동전0(greedy)` `#1931회의실배정(greedy)`| `greedy`
+20210522 | `#1541잃어버린괄호(greedy)` `#13305주유소(greedy)` |`greedy`
+20210523 | `#1260DFS와BFS(DFS\BFS)` `#1003피보나치함수(dynamic programming)` | `DFS` `BFS` `dynamic programming`
 20210601
 20210602
 20210603
