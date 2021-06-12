@@ -12,8 +12,8 @@ def solve(depth, N, M):#함수선언
     for i in range(len(visited)):  # 탐사 check 하면서
         if not visited[i]:  # 탐사 안했다면 ex 1탐색시작한다 -> depth가 1인 것
             visited[i] = True  # 탐사 시작(중복 제거) -> 1 조사했으면 더 조사할 필요 없음 -> false값만 조사대상이기 때문에 true로 바꿔주기 
-            out.append(i+1)  # 탐사 내용
-            solve(depth+1, N, M)  # 깊이 우선 탐색
+            out.append(i+1)  # 탐사 내용 out(list)에 저장하기
+            solve(d  , N, M)  # 깊이 우선 탐색 저장이 끝났다는 건??? 오잉?
             visited[i] = False  # 깊이 탐사 완료
             out.pop()  # 탐사 내용 제거
 

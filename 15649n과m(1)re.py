@@ -16,4 +16,4 @@ def func(depth,n,m):
             func(depth+1,n,m)
             visited=False#return되면 다시 이 라인으로 온다. 출력하면 더 이상 쓸 일 없으니 pop!
             out.pop()#list out을 초기화시키는 것이 아니라 가장 오른쪽 요소를 없애주는 pop을 하는 이유?
-func(o,n,m)
+func(0,n,m)
