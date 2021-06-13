@@ -6,6 +6,7 @@ num_list = [i + 1 for i in range(N)]#사실상 for i in range(1,N)과 같음
 check_list = [False] * N #입력받은 숫자만큼 false리스트 개수 만들기
 
 arr = []
+# 출력시키기 위한 리스트 선언
 
 def dfs(cnt):#dfs 알고리즘 사용
     if(cnt == M):
@@ -37,6 +38,6 @@ def dfs(cnt):#dfs 알고리즘 사용
             # check_list[3]은 아직 true이기 때문에 for i in range(0,N)의 조사 대상이다. 
             # [1,2,3]->[1,2,4]->[1,2,5]->이 다음 과정을 모르겠다..... 
             # 결과는 n=5라면 당연히 [1,3,4]이겠지만, How!!!!!!!!???????
-            #            
+            # 그냥 this i는 끝났으니까 다음 index로 넘어가는건가? 일단 이렇게만 이해하고 넘어가자
         
 dfs(0)
