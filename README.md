@@ -1,4 +1,5 @@
 ## BOJ algorithm study 백준문제풀이
+- commit message는 날짜+요일로 통일하기 
 날짜 | 문제 | 알고리즘
 ---|:---:|:---:
 20210519 | `#11047동전0(greedy)` `#1931회의실배정(greedy)`| `greedy`
