@@ -16,5 +16,5 @@
 20210607 | `#7568덩치(sort)` | `sort`
 20210609 | `#15649N과M(1)(backtracking)`|`backtracking`
 20210610~20210619 | 혼자서 알고리즘 공부하는데에 한계를 느껴 파이썬 알고리즘 인강수강하기로 결정|
-20210620 | `백트래킹기법의이해` `NQUEEN` | `backtracking` 
-
+20210620 | `백트래킹기법의이해` `NQUEEN문제이해` | `backtracking` 
+20210624 | `NQUEEN python코드작성-1` `NQUEEN python코드작성-2` 알고리즘스터디restart(종강하고 다시하기로 했었음) | `backtracking` 
