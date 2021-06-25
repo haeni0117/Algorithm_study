@@ -1,4 +1,4 @@
-## BOJ algorithm study 백준문제풀이
+## BOJ algorithm study 백준문제풀이 + 알고리즘
 - commit message는 날짜+요일로 통일하기 
 
 
