@@ -5,3 +5,5 @@ l = [map(input().split()).strip() for i in range(num)]#strip의 기능?
 l.sorted(lambda x : x[3],x[2],x[1],x[0])
 for i in l:
     print(i[0])
+`
+
